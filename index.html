@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>Temprature check</title>
+</head>
+<body>
+    <div class="outerdiv">
+        <div class="innerdiv">
+            <h1 class="main-heading">I am Thermometer <span id="temp" class="fa"></span></h1>
+        </div>
+    </div>
+    <script>
+        const temperatureCheck = () => {
+            let temp = document.getElementById('temp');
+            temp.innerHTML = "&#xf2cb";
+            temp.style.color = "#f8b627"; 
+        
+        setTimeout(() => {
+            temp.innerHTML = "&#xf2ca";
+            temp.style.color = "#f8b627"; 
+        },1000);
+
+        setTimeout(() => {
+            temp.innerHTML = "&#xf2c9";
+        },2000);
+
+        setTimeout(() => {
+            temp.innerHTML = "&#xf2c8";
+        },3000);
+
+        setTimeout(() => {
+            temp.innerHTML = "&#xf2c7";
+            temp.style.color = "#d63031"; 
+        },4000);
+
+      }
+
+        temperatureCheck();
+
+        setInterval(temperatureCheck,5000)
+    </script>
+</body>
+</html>
