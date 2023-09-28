@@ -1,23 +1,18 @@
-/* body {
+ 
+body {
     margin: 0;
     overflow: hidden;
     background-color: #f0f0f0;
 }
 
-#game {
-    position: relative;
-    width: 800px;
-    height: 400px;
-    margin: 50px auto;
-    background-color: #fff;
+h1{
+    font-size: 80px;
 }
-
-#player {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: blue;
+.outerdiv{
+    height: 100vh;
+    padding-top: 300px;
+    padding-left: 500px;
 }
 
 
- */
+ 
